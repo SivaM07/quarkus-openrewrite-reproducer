@@ -1,5 +1,14 @@
 # quarkus-openrewrite-reproducer
 
+This is a reproducer for Openrewrite Quarkus issue
+https://github.com/openrewrite/rewrite-quarkus/issues/92
+
+We have a sample Change Quarkus property recipe and expect that the `grpc.properties` to be updated from `quarkus.grpc.server.port=9000` to `quarkus.grpc.server.port=9090`
+
+To execute the recipe
+```shell script
+./mvnw rewrite:run
+```
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.

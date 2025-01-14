@@ -1,0 +1,10 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.acme.ChangeDefaultGrpcPort
+displayName: Change Default gRPC port from 9000 to 9090
+recipeList:
+  - org.openrewrite.quarkus.ChangeQuarkusPropertyValue:
+      propertyKey: quarkus.grpc.server.port
+      oldValue: 9000
+      newValue: 9090
+      pathExpressions: ["**/grpc.properties"]
